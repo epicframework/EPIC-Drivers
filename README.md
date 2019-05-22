@@ -1,1 +1,5 @@
 # EPIC-Drivers
+
+Currently includes the EPIC IoT universal device driver. Device driver uses the local network to broadcast its presence in order to be discovered by the EPIC Device Manager. Once acquired, it ceases broadcasting and provides its Mozilla Web of Things-based specification. The Device Driver is deployed with a specification and a list of commands that correspond to its properties and capabilities. When commands are received through its connection with the device manager, it calls a script which corresponds to this command and responds with the returned value. This allows new sensors and actuators to be deployed without the re-development of the core driver.
+
+Framework had additionally included the capability to manage Bluetooth and ZigBee devices, the drivers or which are currently in the process of being re-designed and developed, though specialized implementations are currently required for each use case as well as a specialized device manager which runs with the core application and provides specifications locally.
